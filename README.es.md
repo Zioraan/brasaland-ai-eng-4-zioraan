@@ -54,8 +54,15 @@ Estás construyendo **una sola empresa** a lo largo de muchos hitos y proyectos.
 > 💡 Actualmente el repositorio ofrece solo una **estructura base de carpetas y documentación**. Todavía no incluye aplicaciones ejecutables ni scripts globales en la raíz.
 >
 > - `CONTEXT.md` es un placeholder y debe sustituirse por el contexto de la empresa asignada.
-> - No existe todavía un `AGENTS.md` en la raíz.
+> - `AGENTS.md` y la guía del memory-bank definen las convenciones de trabajo para agentes.
 > - Existe metadata del paquete compartido en `packages/shared/package.json` (`@repo/shared-types`), pero aún no hay runner de workspace en raíz.
+
+## Memoria del proyecto y guía para agentes
+
+- Lee [`AGENTS.md`](./AGENTS.md) para la orientación del agente y los enlaces a las reglas del repositorio.
+- [`memory-bank/progress.md`](./memory-bank/progress.md) registra resultados relevantes y próximos pasos; [`memory-bank/project-structure.md`](./memory-bank/project-structure.md) sirve como mapa navegable del proyecto.
+- [`memory-bank/lessons/`](./memory-bank/lessons/README.md) explica el formato de las lecciones de implementación verificadas para estudiantes.
+- Los archivos operativos de memoria y las reglas del agente se mantienen en inglés. Complementan, pero no sustituyen, el código fuente, el contexto de empresa, los README de cada carpeta ni la documentación estable en `docs/`.
 
 ---
 
@@ -269,6 +276,9 @@ Guía rápida de decisión:
 ```text
 ai-engineering-company-project-monorepo/
 ├── README.md / README.es.md   # Esta guía
+├── AGENTS.md                  # Punto de entrada para agentes
+├── .agents/rules/             # Reglas del repositorio enlazadas explícitamente
+├── memory-bank/               # Progreso, mapa del proyecto y lecciones
 ├── CONTEXT.md                 # ← Reemplazar con el briefing de tu empresa
 ├── docker-compose.yml         # ← Orquestación local (raíz del repo)
 ├── uis/                       # Frontends (website, backoffice, dashboards)

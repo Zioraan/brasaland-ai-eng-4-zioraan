@@ -54,8 +54,15 @@ You are building **one company** across many milestones and projects. Each top-l
 > 💡 This repository currently provides a **base folder structure and documentation skeleton** only. It does not include runnable apps or global scripts yet.
 >
 > - `CONTEXT.md` is a placeholder and must be replaced with your assigned company context.
-> - There is no root `AGENTS.md` yet.
+> - Root `AGENTS.md` and the memory-bank guidance provide working conventions for agents.
 > - Shared package metadata exists in `packages/shared/package.json` (`@repo/shared-types`), but no workspace runner is configured at root.
+
+## Project memory and agent guidance
+
+- Read [`AGENTS.md`](./AGENTS.md) for agent orientation and links to repository rules.
+- [`memory-bank/progress.md`](./memory-bank/progress.md) tracks meaningful implementation outcomes and next steps; [`memory-bank/project-structure.md`](./memory-bank/project-structure.md) is a navigable project map.
+- [`memory-bank/lessons/`](./memory-bank/lessons/README.md) explains the format for verified, student-facing implementation lessons.
+- Operational memory files and agent rules are maintained in English. They complement, rather than replace, source code, company context, folder READMEs, and stable documentation in `docs/`.
 
 ---
 
@@ -269,6 +276,9 @@ Is it a CLI tool with its own package?     → internal/
 ```text
 ai-engineering-company-project-monorepo/
 ├── README.md / README.es.md   # This guide
+├── AGENTS.md                  # Agent entry point
+├── .agents/rules/             # Explicitly linked repository agent rules
+├── memory-bank/               # Progress, project map, and implementation lessons
 ├── CONTEXT.md                 # ← Replace with your company briefing
 ├── docker-compose.yml         # ← Local dev orchestration (repo root)
 ├── uis/                       # Frontends (website, backoffice, dashboards)
